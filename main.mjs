@@ -43,6 +43,7 @@ btn__first.addEventListener('click', () => {
   }
 })
 function checkLanguages() {
+  console.log('window', window)
   let hash = window.location.hash ? window.location.hash.substr(1) : window.navigator.language.substr(0, 2);
   if(!allLang.includes(hash)){
     location.href = window.location.pathname + '#en';
