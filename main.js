@@ -1,4 +1,4 @@
-import { de, en, es, fr, ja, pt } from './src/i18n/index.mjs';
+import { de, en, es, fr, ja, pt } from './src/i18n/index.js';
 
 const title__h1 = document.querySelector('h1.title__h1');
 const title_one = document.querySelector('p.title__one');
