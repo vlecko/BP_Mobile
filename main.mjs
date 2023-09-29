@@ -1,4 +1,4 @@
-import { de, en, es, fr, ja, pt } from './src/i18n/index';
+import { de, en, es, fr, ja, pt } from './src/i18n/index.mjs';
 
 const title__h1 = document.querySelector('h1.title__h1');
 const title_one = document.querySelector('p.title__one');
@@ -43,7 +43,6 @@ btn__first.addEventListener('click', () => {
   }
 })
 function checkLanguages() {
-  console.log('window', window)
   let hash = window.location.hash ? window.location.hash.substr(1) : window.navigator.language.substr(0, 2);
   if(!allLang.includes(hash)){
     location.href = window.location.pathname + '#en';
