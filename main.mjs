@@ -1,12 +1,12 @@
 import { de, en, es, fr, ja, pt } from './src/i18n/index';
 
 const title__h1 = document.querySelector('h1.title__h1');
-const title_one = document.querySelector('p.title_one');
-const title_two = document.querySelector('p.title_two');
-const title_three = document.querySelector('p.title_three');
-const item_one = document.querySelector('div.item_one');
-const item_two = document.querySelector('div.item_two');
-const item_three = document.querySelector('div.item_three');
+const title_one = document.querySelector('p.title__one');
+const title_two = document.querySelector('p.title__two');
+const title_three = document.querySelector('p.title__three');
+const item_one = document.querySelector('div.item__one');
+const item_two = document.querySelector('div.item__two');
+const item_three = document.querySelector('div.item__three');
 const btn__prise_year = document.querySelector('div.btn__prise-year');
 const offer = document.querySelector('div.offer');
 const btn__prise = document.querySelector('div.btn__prise');
@@ -85,122 +85,122 @@ function changeLanguage() {
 
 function changeLanguagesStyle() {
   footer.classList.remove(
-    'footer-pt_375',
-    'footer-es_390',
-    'footer-de_414',
-    'footer-de_390',
-    'footer-es_375',
-    'footer-es_414',
-    'footer-de_414',
-    'footer-pt_414',
-    'footer-en_390',
-    'footer-en_414',
-    'footer-fr_414',
-    'footer-fr_375',
-    'footer-de_375'
+    'footer__pt-375',
+    'footer__es_390',
+    'footer__de-414',
+    'footer__de-390',
+    'footer__es-375',
+    'footer__es-414',
+    'footer__de-414',
+    'footer__pt-414',
+    'footer__en-390',
+    'footer__en-414',
+    'footer__fr-414',
+    'footer__fr-375',
+    'footer__de-375'
   );
   header.classList.remove(
-    'header-es-414',
-    'header-es-390',
-    'header-de-375',
-    'header-de-414',
-    'header-de-390',
-    'header-fr-414',
-    'header-fr-390',
-    'header-fr-375',
-    'header-ja-390',
-    'header-pt-390',
-    'header-pt-375'
+    'header__es-414',
+    'header__es-390',
+    'header__de-375',
+    'header__de-414',
+    'header__de-390',
+    'header__fr-414',
+    'header__fr-390',
+    'header__fr-375',
+    'header__ja-390',
+    'header__pt-390',
+    'header__pt-375'
   );
   price.classList.remove(
     'btn__prise-es',
     'btn__prise-es', 'btn__prise-pt',
-    'btn__prise_pt_375',
-    'btn__prise-fr_375'
+    'btn__prise_pt-375',
+    'btn__prise-fr-375'
   );
-  title.classList.remove('title-es');
-  two.classList.remove('title-es', 'two_de_375', 'two_375', 'two_pt_414');
-  btn__prise.classList.remove('btn__prise_de_375', 'btn__prise_fr_414', 'btn__prise-fr');
+  title.classList.remove('title__es');
+  two.classList.remove('title__es', 'two__de-375', 'two__375', 'two__pt-414');
+  btn__prise.classList.remove('btn__prise_de-375','btn__prise_fr-375', 'btn__prise_fr-414', 'btn__prise-fr');
   
   if(window.innerWidth === 375){
     if(lang.Lang === 'es'){
-      footer.classList.add('footer-es_375');
+      footer.classList.add('footer__es-375');
       price.classList.add('btn__prise-es');
     }
     if(lang.Lang === 'pt'){
-      header.classList.add('header-pt-375');
-      footer.classList.add('footer-pt_375');
-      price.classList.add('btn__prise_pt_375');
+      header.classList.add('header__pt-375');
+      footer.classList.add('footer__pt-375');
+      price.classList.add('btn__prise_pt-375');
     }
     if(lang.Lang === 'de'){
-      footer.classList.add('footer-de_375');
-      header.classList.add('header-de-375');
-      btn__prise.classList.add('btn__prise_de_375');
-      two.classList.add('two_de_375')
+      footer.classList.add('footer__de-375');
+      header.classList.add('header__de-375');
+      btn__prise.classList.add('btn__prise_de-375');
+      two.classList.add('two__de-375')
     }
     if(lang.Lang === 'fr'){
-      header.classList.add('header-fr-375');
-      btn__prise.classList.add('btn__prise-fr_375');
-      footer.classList.add('footer-fr_375');
-      two.classList.add('two_375')
+      header.classList.add('header__fr-375');
+      btn__prise.classList.add('btn__prise_fr-375');
+      footer.classList.add('footer__fr-375');
+      two.classList.add('two__375')
     }
   }
   if(window.innerWidth === 414){
     if(lang.Lang === 'es'){
-      header.classList.add('header-es-414');
-      footer.classList.add('footer-es_414');
+      header.classList.add('header__es-414');
+      footer.classList.add('footer__es-414');
       price.classList.add('btn__prise-es');
     }
     if(lang.Lang === 'en'){
-      footer.classList.add('footer-en_414');
+      footer.classList.add('footer__en-414');
     }
     if(lang.Lang === 'pt'){
-      footer.classList.add('footer-pt_414');
+      footer.classList.add('footer__pt-414');
       price.classList.add('btn__prise-pt');
-      two.classList.add('two_pt_414');
+      two.classList.add('two__pt-414');
     }
     if(lang.Lang === 'ja'){
-      header.classList.add('header-de-390');
+      header.classList.add('header__de-390');
     }
     if(lang.Lang === 'de'){
-      footer.classList.add('footer-de_414');
-      header.classList.add('header-de-414');
-      btn__prise.classList.add('btn__prise_de_375');
+      footer.classList.add('footer__de-414');
+      header.classList.add('header__de-414');
+      btn__prise.classList.add('btn__prise_de-375');
     }
     if(lang.Lang === 'fr'){
-      btn__prise.classList.add('btn__prise_fr_414');
-      footer.classList.add('footer-fr_414');
-      header.classList.add('header-fr-414');
+      btn__prise.classList.add('btn__prise_fr-414');
+      footer.classList.add('footer__fr-414');
+      header.classList.add('header__fr-414');
     }
   }
   if(window.innerWidth === 390){
     if(lang.Lang === 'es'){
-      header.classList.add('header-es-390');
+      header.classList.add('header__es-390');
       price.classList.add('btn__prise-es');
-      title.classList.add('title-es');
-      footer.classList.add('footer-es_390');
+      title.classList.add('title__es');
+      footer.classList.add('footer__es-390');
     }
     if(lang.Lang === 'en'){
-      header.classList.add('header-fr-390');
-      footer.classList.add('footer-en_390');
+      header.classList.add('header__fr-390');
+      footer.classList.add('footer__en-390');
     }
     if(lang.Lang === 'ja'){
-      header.classList.add('header-ja-390');
+      header.classList.add('header__ja-390');
     }
     if(lang.Lang === 'pt'){
-      header.classList.add('header-pt-390');
-      footer.classList.add('footer-pt_390');
+      header.classList.add('header__pt-390');
+      footer.classList.add('footer__pt-390');
       price.classList.add('btn__prise-pt');
     }
     if(lang.Lang === 'de'){
-      header.classList.add('header-de-390');
-      footer.classList.add('footer-de_390');
-      two.classList.add('two_de_375')
-      btn__prise.classList.add('btn__prise_de_375');
+      header.classList.add('header__de-390');
+      footer.classList.add('footer__de-390');
+      two.classList.add('two__de-375')
+      btn__prise.classList.add('btn__prise_de-375');
     }
     if(lang.Lang === 'fr'){
-      header.classList.add('header-fr-390');
-      footer.classList.add('footer-de_390');
+      header.classList.add('header__fr-390');
+      footer.classList.add('footer__de-390');
       btn__prise.classList.add('btn__prise-fr');
     }
   }
