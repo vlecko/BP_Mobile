@@ -121,22 +121,22 @@ function changeLanguagesStyle() {
   btn__prise.classList.remove('btn__prise_de-375','btn__prise_fr-375', 'btn__prise_fr-414', 'btn__prise-fr');
   
   if(window.innerWidth === 375){
-    if(lang.Lang === 'es'){
+    if(lang.Lang == 'es'){
       footer.classList.add('footer__es-375');
       price.classList.add('btn__prise-es');
     }
-    if(lang.Lang === 'pt'){
+    if(lang.Lang == 'pt'){
       header.classList.add('header__pt-375');
       footer.classList.add('footer__pt-375');
       price.classList.add('btn__prise_pt-375');
     }
-    if(lang.Lang === 'de'){
+    if(lang.Lang == 'de'){
       footer.classList.add('footer__de-375');
       header.classList.add('header__de-375');
       btn__prise.classList.add('btn__prise_de-375');
       two.classList.add('two__de-375')
     }
-    if(lang.Lang === 'fr'){
+    if(lang.Lang == 'fr'){
       header.classList.add('header__fr-375');
       btn__prise.classList.add('btn__prise_fr-375');
       footer.classList.add('footer__fr-375');
@@ -144,59 +144,59 @@ function changeLanguagesStyle() {
     }
   }
   if(window.innerWidth === 414){
-    if(lang.Lang === 'es'){
+    if(lang.Lang == 'es'){
       header.classList.add('header__es-414');
       footer.classList.add('footer__es-414');
       price.classList.add('btn__prise-es');
     }
-    if(lang.Lang === 'en'){
+    if(lang.Lang == 'en'){
       footer.classList.add('footer__en-414');
     }
-    if(lang.Lang === 'pt'){
+    if(lang.Lang == 'pt'){
       footer.classList.add('footer__pt-414');
       price.classList.add('btn__prise-pt');
       two.classList.add('two__pt-414');
     }
-    if(lang.Lang === 'ja'){
+    if(lang.Lang == 'ja'){
       header.classList.add('header__de-390');
     }
-    if(lang.Lang === 'de'){
+    if(lang.Lang == 'de'){
       footer.classList.add('footer__de-414');
       header.classList.add('header__de-414');
       btn__prise.classList.add('btn__prise_de-375');
     }
-    if(lang.Lang === 'fr'){
+    if(lang.Lang == 'fr'){
       btn__prise.classList.add('btn__prise_fr-414');
       footer.classList.add('footer__fr-414');
       header.classList.add('header__fr-414');
     }
   }
   if(window.innerWidth === 390){
-    if(lang.Lang === 'es'){
+    if(lang.Lang == 'es'){
       header.classList.add('header__es-390');
       price.classList.add('btn__prise-es');
       title.classList.add('title__es');
       footer.classList.add('footer__es-390');
     }
-    if(lang.Lang === 'en'){
+    if(lang.Lang == 'en'){
       header.classList.add('header__fr-390');
       footer.classList.add('footer__en-390');
     }
-    if(lang.Lang === 'ja'){
+    if(lang.Lang == 'ja'){
       header.classList.add('header__ja-390');
     }
-    if(lang.Lang === 'pt'){
+    if(lang.Lang == 'pt'){
       header.classList.add('header__pt-390');
       footer.classList.add('footer__pt-390');
       price.classList.add('btn__prise-pt');
     }
-    if(lang.Lang === 'de'){
+    if(lang.Lang == 'de'){
       header.classList.add('header__de-390');
       footer.classList.add('footer__de-390');
       two.classList.add('two__de-375')
       btn__prise.classList.add('btn__prise_de-375');
     }
-    if(lang.Lang === 'fr'){
+    if(lang.Lang == 'fr'){
       header.classList.add('header__fr-390');
       footer.classList.add('footer__de-390');
       btn__prise.classList.add('btn__prise-fr');
