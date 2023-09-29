@@ -42,7 +42,6 @@ btn__first.addEventListener('click', () => {
     return count = 1
   }
 })
-
 function checkLanguages() {
   let hash = window.location.hash ? window.location.hash.substr(1) : window.navigator.language.substr(0, 2);
   if(!allLang.includes(hash)){
@@ -82,7 +81,6 @@ function changeLanguage() {
   footer__title_two.innerHTML = lang['Privacy Policy'];
   footer__title_three.innerHTML = lang['Restore'];
 }
-
 function changeLanguagesStyle() {
   footer.classList.remove(
     'footer__pt-375',
