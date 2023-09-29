@@ -80,7 +80,7 @@
   margin: 90px 30px 5px 30px;
 }
 .footer-en_390{
-  margin: 60px 30px 5px 30px;
+  margin: 90px 30px 5px 30px;
 }
 .btn__prise_de_375{
   width: 77px;
@@ -113,6 +113,10 @@
   width: 77px;
   margin-right: 51px;
 }
+.two_pt_414 {
+  width: 66px;
+  margin-right: 60px;
+}
 .btn__prise-pt {
   width: 85px;
   margin-right: 40px;
@@ -120,4 +124,7 @@
 .btn__prise-es {
   width: 85px;
   margin-right: 31px;
+}
+.border{
+  border: 1px solid red;
 }
